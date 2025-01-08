@@ -182,7 +182,7 @@ video {
   inline-size: 100%;
 }
 .search-form__submit-button {
-  align-self: flex-end;
+  align-self: flex-end; 
 }
 .content__details {
   inline-size: 100%;
@@ -198,14 +198,6 @@ video {
 }
 .content__accent {
   color: #545050;
-}
-.content__list {
-  position: relative;
-  overflow-y: auto;
-  block-size: 298px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 .content__list-item:not(:last-child) {
   margin: 0 0 34px;
@@ -233,6 +225,7 @@ video {
 .content__video-card {
   display: flex;
   justify-content: space-between;
+  align-items: start;
 }
 .content__video-card-title {
   padding: 2px 2px 5px;
@@ -258,4 +251,11 @@ video {
 }
 .content__list-container {
   position: relative;
+  overflow-y: auto;  
+  height: 298px;
+  block-size: 298px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
+
