@@ -66,19 +66,29 @@ video {
   display: flex;
   gap: 30px;
   inline-size: 100%;
+  margin: auto 30px;
+  min-height: 534px;
 }
 .result {
   align-self: flex-end;
+  width: 711px;
+  padding: 78px 0px 0px 0px;
 }
 .result__video-container {
   position: relative;
   inline-size: 711px;
-  margin: 0 0 11px;
+  margin: 0 0 16px;
+  height: 386px;
 }
 .search-form {
   display: flex;
   align-items: center;
   gap: 40px;
+  margin-top: 2px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
 }
 .result__video {
   inline-size: 100%;
@@ -96,6 +106,7 @@ video {
 .search-form__fieldset-title {
   font-weight: 400;
   font-size: 18px;
+  line-height: 21.6px;
 }
 .search-form__label {
   display: flex;
@@ -103,12 +114,12 @@ video {
   gap: 5px;
   cursor: pointer;
 }
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline 1px white;
   text-underline-offset: 1px;
 }
 .search-form__textfield {
-  border-top: 1px solid white;
+  border-top: 1px solid currentColor;
   border-right: none;
   border-bottom: 1px solid white;
   border-left: none;
@@ -119,6 +130,8 @@ video {
   font-size: inherit;
   background-color: transparent;
   inline-size: 225px;
+  height: 27px;
+  line-height: 21.6px;
 }
 .search-form__textfield::placeholder {
   font-family: inherit;
@@ -154,7 +167,7 @@ video {
   margin: 1px 0 0 1px;
 }
 .button {
-  border: 1px solid white;
+  border: 1px solid currentColor;
   padding: 6px 0;
   color: white;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -188,7 +201,7 @@ video {
   inline-size: 100%;
 }
 .title {
-  padding:  0 0 26px;
+  padding: 0 0 26px;
   color: white;
   font-family: Oswald, sans-serif;
   font-weight: 700; 
@@ -228,6 +241,9 @@ video {
   align-items: start;
 }
 .content__video-card-title {
+  max-width: 196px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding: 2px 2px 5px;
   color: white;
   font-family: Oswald, sans-serif;
@@ -238,12 +254,14 @@ video {
   hyphens: auto;
 }
 .content__video-card-description {
+  max-width: 196px;
   padding: 0 2px;
   color: white;
   font-weight: 400;
   line-height: 16.2px;
 }
 .content__video-card-thumbnail {
+  box-sizing: border-box;
   inline-size: 194px;
   block-size: 103px;
   object-fit: cover;
