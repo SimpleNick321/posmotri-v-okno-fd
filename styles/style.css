@@ -67,7 +67,6 @@ video {
   gap: 30px;
   inline-size: 100%;
   margin: auto 30px;
-  min-height: 534px;
 }
 .result {
   align-self: flex-end;
